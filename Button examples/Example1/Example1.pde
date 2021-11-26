@@ -32,8 +32,8 @@ void mousePressed()
 {
   rect=false;
   circle=false;
-if (mouseX>buttonX) rect=true;
-if (mouseX>buttonX2) circle=true;
+if (mouseX>buttonX mouseY>buttonY) rect=true;
+if (mouseX>buttonX2 mouseY>buttonY2) circle=true;
 }//End mousePressed
 
 void keyPressed() 
