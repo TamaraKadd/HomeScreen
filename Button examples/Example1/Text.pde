@@ -1,26 +1,46 @@
 
 
-String buttonText = "Peepee";
-String buttonText2 ="PooPoo";
+String buttonText = "hello";
+String buttonText2 ="hi";
 PFont buttonFont;
 color green = #038921;
 color white = #FFFFFF;
-println("Start of Console");
-//
-String[] fontlist = PFont.list();
-printArray(fontlist);
-buttonFont = createFont ("", 55);
+color purple = #BD10E0;
 
-//Populating Variables
-titleX = width*1/5;
-titleY = height*1/10;
-titleWidth = width*3/5;
-titleHeight = height*1/10;
-//
+void textDrawPre()
+{
+  fill(green);
+  textAlign (CENTER, CENTER); 
+  textFont(buttonFont, 50);
+}
 
-fill(purple); 
-textAlign (CENTER, CENTER); 
-textFont(titleFont, 50); 
-text(title, titleX, titleY, titleWidth, titleHeight);
-fill(white); //reset
-//Space for more rectangles below, with reset values
+
+void textSetup()
+{
+  // println("Start of Console");
+  //String[] fontlist = PFont.list();
+  //printArray(fontlist);
+  buttonFont = createFont ("Yu Gothic Light", 55);
+}//End setup
+
+//
+void textDraw1()
+{
+
+  textDrawPre();
+  text(buttonText, buttonX, buttonY, buttonWidth, buttonHeight);
+textDrawPost(); //reset
+}//End
+
+void textDraw2() 
+{
+
+  textDrawPre();
+  text(buttonText2, buttonX2, buttonY2, buttonWidth2, buttonHeight2);
+textDrawPost(); //reset
+}
+
+void textDrawPost()
+{
+ fill(white);
+}
