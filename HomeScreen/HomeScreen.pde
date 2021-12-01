@@ -5,7 +5,7 @@ color black = #000000, white = #FFFFFF;
 float circleDiameter, rectWidth, rectHeight;
 float ptX1, ptX2, ptX3, ptX4, ptX5, ptX6, ptX7, ptX8, ptX9, ptX10, ptX11, ptX12, ptX13, ptX14, ptX15, ptX16;
 float ptY1, ptY2, ptY3, ptY4, ptY5, ptY6, ptY7, ptY8, ptY9, ptY10, ptY11, ptY12, ptY13, ptY14, ptY15, ptY16;
-PImage pic1, pic2, pic3, pic4;
+PImage pic1, pic2, pic3, pic4, pic6, pic7, pic8, pic9;
 
 
 //
@@ -15,6 +15,11 @@ void setup()
   pic2 = loadImage("../store.jpg");
   pic3 = loadImage("../school.jpg");
   pic4 = loadImage("../Park.png");
+  pic6 = loadImage("../library.jpg");
+  pic7 = loadImage("../diner.jpg");
+  pic8 = loadImage("../mall.jpg");
+ pic9 = loadImage("../arcade.jpg");
+  
   //
   fullScreen();
   //
@@ -66,6 +71,11 @@ void draw()
   image(pic2, ptX2, ptY2, rectWidth, rectHeight);
   image(pic3, ptX3, ptY3, rectWidth, rectHeight);
   image(pic4, ptX4, ptY4, rectWidth, rectHeight);
+  image(pic6, ptX6, ptY6, rectWidth, rectHeight);
+  image(pic7, ptX7, ptY7, rectWidth, rectHeight);
+  image(pic8, ptX8, ptY8, rectWidth, rectHeight);
+  image(pic9, ptX9, ptY9, rectWidth, rectHeight);
+  
   //
   fill(black);
   ellipse(ptX1, ptY1, circleDiameter, circleDiameter);
