@@ -6,11 +6,26 @@ float circleDiameter, rectWidth, rectHeight;
 float ptX1, ptX2, ptX3, ptX4, ptX5, ptX6, ptX7, ptX8, ptX9, ptX10, ptX11, ptX12, ptX13, ptX14, ptX15, ptX16;
 float ptY1, ptY2, ptY3, ptY4, ptY5, ptY6, ptY7, ptY8, ptY9, ptY10, ptY11, ptY12, ptY13, ptY14, ptY15, ptY16;
 PImage pic1, pic2, pic3, pic4, pic6, pic7, pic8, pic9;
+String title = "PICK  WHERE  TO  GO";
+String resetWords = "CLICK TO RESET";
+PFont titleFont;
+Boolean rect=false, circle=false;
+
+//
+//BUTTONS
+
+
+
+
+
 
 
 //
 void setup() 
 {
+
+  titleFont = createFont ("Papyrus", 70);
+  
   pic1 = loadImage("../house.jpg");
   pic2 = loadImage("../store.jpg");
   pic3 = loadImage("../school.jpg");
@@ -61,7 +76,15 @@ void draw()
   rect(ptX2, ptY2, rectWidth, rectHeight);
   rect(ptX3, ptY3, rectWidth, rectHeight);
   rect(ptX4, ptY4, rectWidth, rectHeight);
+  
+
   rect(ptX5, ptY5, rectWidth, rectHeight);
+  textAlign(CENTER, CENTER);
+  textFont(titleFont, 50);
+    fill(black);
+  text(title, ptX5, ptY5, rectWidth, rectHeight);
+  fill(white);
+  
   rect(ptX6, ptY6, rectWidth, rectHeight);
   rect(ptX7, ptY7, rectWidth, rectHeight);
   rect(ptX8, ptY8, rectWidth, rectHeight);
@@ -78,6 +101,7 @@ void draw()
   
   //
   fill(black);
+ 
   ellipse(ptX1, ptY1, circleDiameter, circleDiameter);
   ellipse(ptX2, ptY2, circleDiameter, circleDiameter);
   ellipse(ptX3, ptY3, circleDiameter, circleDiameter);
@@ -97,10 +121,19 @@ void draw()
   ellipse(ptX16, ptY16, circleDiameter, circleDiameter);
 
   fill(white);
-}//End Setup
+  
+   if (rect==true) Button1();
+}//End Draw
 
 void mousePressed() 
 {
+ 
+    rect=false;
+ 
+  if (mouseX>ptX1 && mouseX<ptX1+rectWidth&& mouseY>ptY1 && mouseY<ptY1+rectHeight ) rect = true;
+  
+  
+  
 }//End Setup
 
 void keyPressed() 
