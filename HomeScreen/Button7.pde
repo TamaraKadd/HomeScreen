@@ -1,4 +1,4 @@
-void Button1() 
+void Button7() 
 {
  rect(ptX1, ptY1, rectWidth, rectHeight);
   rect(ptX2, ptY2, rectWidth, rectHeight);
