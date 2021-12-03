@@ -1,6 +1,15 @@
+
+
+
 void Button2() 
 {
+  
+  
+  
  rect(ptX1, ptY1, rectWidth, rectHeight);
+ 
+ 
+ 
   rect(ptX2, ptY2, rectWidth, rectHeight);
   rect(ptX3, ptY3, rectWidth, rectHeight);
   rect(ptX4, ptY4, rectWidth, rectHeight);
@@ -8,7 +17,7 @@ void Button2()
   rect(ptX5, ptY5, rectWidth, rectHeight);
   textAlign(CENTER, CENTER);
   textFont(titleFont, 50);
-    fill(black);
+    fill(random);
   text(resetWords, ptX5, ptY5, rectWidth, rectHeight);
   fill(white);
 //

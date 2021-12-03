@@ -5,7 +5,7 @@ color black = #000000, white = #FFFFFF;
 float circleDiameter, rectWidth, rectHeight;
 float ptX1, ptX2, ptX3, ptX4, ptX5, ptX6, ptX7, ptX8, ptX9, ptX10, ptX11, ptX12, ptX13, ptX14, ptX15, ptX16;
 float ptY1, ptY2, ptY3, ptY4, ptY5, ptY6, ptY7, ptY8, ptY9, ptY10, ptY11, ptY12, ptY13, ptY14, ptY15, ptY16;
-PImage pic1, pic2, pic3, pic4, pic6, pic7, pic8, pic9, Dog1, DogBowl;
+PImage pic1, pic2, pic3, pic4, pic6, pic7, pic8, pic9, Dog1, DogBowl, DogDoor, DogPark, DogStill, DogRun, ArcadeInside, Barkade, DogRunToy, LibraryInside, DogRead;
 String title = "start at home";
 String resetWords = "CLICK  HERE TO GO BACK";
 PFont titleFont;
@@ -36,7 +36,15 @@ void setup()
   pic9 = loadImage("../arcade.jpg");
   Dog1 = loadImage("../dog.jpg");
  DogBowl = loadImage("../dogfood.jpg");
-  
+  DogDoor = loadImage("../dogrunsaway.jpg");
+  DogPark = loadImage("../DogPark.jpg");
+  DogStill = loadImage("../LAB.jpg");
+  DogRun = loadImage("../Dogrun.jpg");
+  ArcadeInside = loadImage("../ArcadeInside.jpg");
+  Barkade = loadImage("../Barkade.jpg");
+  DogRunToy = loadImage("../DogRunToy.jpg");
+  LibraryInside = loadImage("../libraryIn.jpg");
+  DogRead = loadImage("../dogreading.jpg");
   
   
   //
